@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+}
+
+table tr td {
+  border: 8px solid rgb(20, 23, 21);
+}
+
+table tr {
+  height: 30px;
+}
+
+.double_height {
+  height: 60px;
+}
+
+.half_height {
+  height: 15px;
+}
+
+#double_width {
+  width: 100px;
+}
+
+.yellow {
+  background-color: rgb(250, 238, 104);
+}
+
+.red {
+  background-color: rgb(254, 94, 53);
+}
+
+.black {
+  background-color: rgb(43, 43, 43);
+}
+
+.blue {
+  background-color: rgb(17, 78, 141);
+}
