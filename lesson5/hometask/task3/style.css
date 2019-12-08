@@ -1,0 +1,45 @@
+header {
+  margin-top: 25px;
+  max-width: 100%;
+}
+
+.flex-container > ul {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(26, 164, 255);
+}
+
+.flex-container > ul li a {
+  display: block;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+}
+
+.flex-container li a:hover {
+  background-color: rgb(238, 238, 238);
+  color: rgb(164, 164, 164);
+}
+
+/*Submenu*/
+.flex-container li ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-width: 100px;
+  display: none;
+}
+
+.flex-container li > ul li a {
+  display: block;
+  padding: 15px;
+  color: rgb(164, 164, 164);
+}
+
+.flex-container li:hover > ul {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+}
