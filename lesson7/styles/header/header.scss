@@ -1,0 +1,41 @@
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 60px;
+
+  &__logo-container {
+    width: 50%;
+    margin: 10px 0;
+
+    &-caption {
+      font-family: 'Inconsolata', monospace;
+      font-size: 30px;
+      text-transform: uppercase;
+      color: rgb(98, 98, 98);
+      letter-spacing: 7px;
+    }
+  }
+
+  &__nav-list-container {
+    width: 50%;
+    
+    .header__nav-list {
+      display: flex;
+      justify-content: space-between;
+
+      &-item {
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        color: rgb(98, 98, 98);
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
