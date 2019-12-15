@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Ubuntu';
-  src: url("/lesson7/fonts/ubuntu.woff");
+  src: url("fonts/ubuntu.woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -142,7 +142,7 @@ body {
 
 .main__sign-up .main__form-title::after {
   content: '';
-  background: url("/lesson7/images/arrow-right.png");
+  background: url("images/arrow-right.png");
   background-size: cover;
   height: 15px;
   width: 15px;
