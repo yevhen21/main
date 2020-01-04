@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Futura-bookBT';
+  src: url("../../fonts/futura-book-bt-22240.ttf");
+}
+
+.services {
+  background: url("../../images/services.jpg");
+  background-size: cover;
+  min-height: 576px;
+  position: relative;
+  z-index: -2;
+}
+
+.services__wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.services__container {
+  width: 50%;
+  padding: 70px 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.services__container-header {
+  height: 70px;
+  font-family: 'Futura-bookBT';
+  font-size: 26px;
+  color: #ee8129;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.services__container-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.services__container-list {
+  list-style-type: disc;
+  width: 97%;
+  margin: 0 auto;
+}
+
+.services__container-list-item {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #9d9d9d;
+  line-height: 2;
+  margin: 10px;
+}
+
+.services__container-list-item:nth-child(2) {
+  color: #3070a8;
+}
+
+.shadow-black {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 80%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .services {
+    background-position: center;
+  }
+  .services__container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .services__container {
+    padding: 0 20px;
+  }
+  .services__container-header {
+    font-size: 20px;
+  }
+  .services__container-text {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .services__container-list-item {
+    line-height: 1.2;
+  }
+}
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'DejaVu Sans';
+  src: url(../../fonts/DejaVuSans.ttf);
+}
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: #2567a9;
+  position: relative;
+}
+
+.footer__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.footer__wrapper-data {
+  font-family: 'DejaVu Sans';
+  font-size: 13px;
+  color: #fff;
+  line-height: 2;
+  text-align: center;
+}
+
+.footer__wrapper-data b {
+  font-family: 'DejaVu Sans';
+  font-size: 14px;
+  color: #fff;
+  line-height: 2;
+}
+
+.footer__link {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer__wrapper {
+    width: 70%;
+  }
+  .footer__wrapper-data {
+    line-height: 1.5;
+  }
+  .footer__wrapper-data b {
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'DejaVu Sans';
+  src: url(../../fonts/DejaVuSans.ttf);
+}
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: rgb(37, 103, 169);
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-data {
+      font-family: 'DejaVu Sans';
+      font-size: 13px;
+      color: #fff;
+      line-height: 2;
+      text-align: center;
+
+      b {
+        font-family: 'DejaVu Sans';
+        font-size: 14px;
+        color: #fff;
+        line-height: 2;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer__wrapper {
+    width: 70%;
+
+    &-data {
+      line-height: 1.5;
+
+      b {
+        line-height: 1.5;
+      }
+    }
+  }
+}

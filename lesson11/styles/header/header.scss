@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Futura-bookBT';
+  src: url('../../fonts/futura-book-bt-22240.ttf');
+}
+
+@font-face {
+  font-family: 'futuraBold';
+  src: url('../../fonts/Futura-Bold.woff');
+}
+
+.header { 
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 40px 0;
+
+  &__company-name {
+    width: 40%;
+  }
+
+  &__company-name-title {
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #ee8129;
+    font-family: 'Futura-bookBT';
+
+    span {
+      font-family: 'futuraBold';
+      text-transform: uppercase;
+      color: #3070a8;
+    }
+  }
+
+  &__nav-container {
+    width: 60%;
+  }
+  
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    width: calc(100% / 6);
+    text-align: center;
+
+    &:hover {
+      border-bottom: 5px solid rgb(37, 103, 169)
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000;
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+      color: rgb(37, 103, 169);
+    }
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+
+    &__company-name {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &__nav-container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header__nav-container {
+    width: 100%;
+  }
+  
+  .header__nav-list {
+    flex-direction: column;
+  }
+
+  .header__nav-item {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+  }
+}

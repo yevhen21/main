@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Trebuchet MS Bold';
+  src: url(../../fonts/trebuchet-ms-grassetto.ttf);
+}
+
+@font-face {
+  font-family: 'Futura-bookBT';
+  src: url('../../fonts/futura-book-bt-22240.ttf');
+}
+
+.portfolio {
+  background-color: #fff;
+  min-height: 564px;
+
+  &__container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    font-family: 'Trebuchet MS Bold';
+    font-size: 30px;
+    color: #41525c;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 65px auto;
+  }
+
+  &__flex-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      width: calc(100% / 3);
+      padding: 20px;
+
+      &-img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      &-header {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Futura-bookBT';
+        color: #3070a8;
+        font-size: 30px;
+        padding: 10px;
+        margin: 20px auto;
+      }
+
+      &-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__header {
+    margin: 30px auto;
+  }
+
+  .portfolio__flex-wrapper-item {
+    padding: 10px;
+
+    &-img {
+      width: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .portfolio__header {
+    font-size: 24px;
+    margin: 30px auto;
+  }
+
+  .portfolio__flex-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    &-item {
+      width: 90%;
+
+      &-header {
+        margin: 0 auto;
+      }
+
+      &-text {
+        text-align: justify;
+        padding: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+} 

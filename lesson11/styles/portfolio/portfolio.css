@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Trebuchet MS Bold';
+  src: url(../../fonts/trebuchet-ms-grassetto.ttf);
+}
+
+@font-face {
+  font-family: 'Futura-bookBT';
+  src: url("../../fonts/futura-book-bt-22240.ttf");
+}
+
+.portfolio {
+  background-color: #fff;
+  min-height: 564px;
+}
+
+.portfolio__container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.portfolio__header {
+  text-align: center;
+  font-family: 'Trebuchet MS Bold';
+  font-size: 30px;
+  color: #41525c;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 65px auto;
+}
+
+.portfolio__flex-wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__flex-wrapper-item {
+  width: calc(100% / 3);
+  padding: 20px;
+}
+
+.portfolio__flex-wrapper-item-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio__flex-wrapper-item-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Futura-bookBT';
+  color: #3070a8;
+  font-size: 30px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.portfolio__flex-wrapper-item-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio__header {
+    margin: 30px auto;
+  }
+  .portfolio__flex-wrapper-item {
+    padding: 10px;
+  }
+  .portfolio__flex-wrapper-item-img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .portfolio__header {
+    font-size: 24px;
+    margin: 30px auto;
+  }
+  .portfolio__flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio__flex-wrapper-item {
+    width: 90%;
+  }
+  .portfolio__flex-wrapper-item-header {
+    margin: 0 auto;
+  }
+  .portfolio__flex-wrapper-item-text {
+    text-align: justify;
+    padding: 10px;
+  }
+  .portfolio__flex-wrapper-item:last-child {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
